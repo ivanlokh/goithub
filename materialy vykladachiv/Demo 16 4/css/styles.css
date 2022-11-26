@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  src: local('Inter'),
+    url('../fonts/inter-v12-latin-regular.woff2') format('woff2'),
+    url('../fonts/inter-v12-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 500;
+  src: local('Inter'), url('../fonts/inter-v12-latin-500.woff2') format('woff2'),
+    url('../fonts/inter-v12-latin-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600;
+  src: local('Inter'), url('../fonts/inter-v12-latin-600.woff2') format('woff2'),
+    url('../fonts/inter-v12-latin-600.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 700;
+  src: local('Inter'), url('../fonts/inter-v12-latin-700.woff2') format('woff2'),
+    url('../fonts/inter-v12-latin-700.woff') format('woff');
+}
+
+:root {
+  --color-primary: #21243d;
+  --color-secondary: #8695a4;
+  --color-action: #ff6464;
+  --color-invert: #fff;
+  --color-brand: #00a8cc;
+  --color-background: #fff;
+  --color-background-brand: #edf7fa;
+  --color-post-label: #2a326f;
+}
+
+::selection {
+  color: var(--color-invert);
+  background-color: var(--color-brand);
+}
+
+body {
+  color: var(--color-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--color-background);
+}
+
+.link {
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero-title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.button-primary {
+  color: var(--color-invert);
+  font-weight: 600;
+  text-decoration: none;
+  background-color: var(--color-action);
+}
+
+.section-brand {
+  background-color: var(--color-background-brand);
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.view-all-link {
+  color: var(--color-brand);
+  font-weight: 600;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+
+.view-all-link:hover {
+  text-decoration: underline;
+}
+
+.post {
+  background-color: var(--color-background);
+}
+
+.work-post-year {
+  color: var(--color-invert);
+  background-color: var(--color-post-label);
+}
+
+.work-post-topic {
+  color: var(--color-secondary);
+}
