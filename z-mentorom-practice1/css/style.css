@@ -4,6 +4,12 @@ body {
   color: #939393;
 }
 
+.link {
+  text-decoration: none;
+}
+.list{
+  list-style: none;
+}
 /* HEADER */
 .logo {
   font-size: 36px;
